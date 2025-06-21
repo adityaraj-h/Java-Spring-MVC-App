@@ -18,8 +18,11 @@ public class User{
 
     }
 
-    public Long getid(){return id;}
-    public void setid(Long id){this.id=id;}
+    // No argument constructor to create an empty User object to bind form fields.
+    public User(){}
+
+    public Long getId(){return id;}
+    public void setId(Long id){this.id=id;}
 
     public String getName(){return name;}
     public void setName(String name){this.name=name;}
@@ -31,6 +34,6 @@ public class User{
     public void setContact(String contact){this.contact=contact;}
 
     public String getEmail(){return email;}
-    public void setId(String email){this.email=email;}
+    public void setEmail(String email){this.email=email;}
 
 }

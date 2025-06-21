@@ -5,6 +5,8 @@ import org.springframework.stereotype.Service;
 import com.example.demo.model.User;
 import com.example.demo.mapper.UserMapper;
 
+import java.util.List;
+
 @Service
 public class UserService{
 
@@ -14,9 +16,16 @@ public class UserService{
         this.userMapper = userMapper;
     }
 
-    public User createUser(User user){
+    public List<User> getAllUsers(){
+        return userMapper.getAllUsers();
+    }
+
+    public void updateUser(User user){
+         userMapper.updateUser(user);
+    }
+
+    public void createUser(User user){
         userMapper.createUser(user);
-        return user;
     }
 
     public User getUserById(Long id){
