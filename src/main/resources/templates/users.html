@@ -19,7 +19,7 @@
             <td th:text="${user.email}"></td>
             <td>
                 <a th:href="@{'/users/edit/' + ${user.id}}">Edit</a>
-                <a th:href="@{'/users/delete/confirm' + ${user.id}}" onclick="return confirm('Are you sure?')">Delete</a>
+                <a th:href="@{'/users/delete/confirm/' + ${user.id}}" onclick="return confirm('Are you sure?')">Delete</a>
             </td>
         </tr>
     </table>
