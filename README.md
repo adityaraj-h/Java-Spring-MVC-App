@@ -1,4 +1,4 @@
-# Springboot-MVC-Application
+# Springboot-MVC-Application with Solr Search Integration
 
 Things you will need to set this up locally:
 
