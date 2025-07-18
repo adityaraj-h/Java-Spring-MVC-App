@@ -6,7 +6,16 @@
 <body>
     <h1 style="color:Red">Welcome to Delicacy!! </h1>
     <h3>User List</h3>
-    
+
+    <form th:action="@{/users/search}" method="get">
+        <input type="text" name="id" placeholder="Id..." />
+        <input type="text" name="name" placeholder="Name..."  />
+        <input type="text" name="contact" placeholder="Contact..."  />
+        <input type="text" name="email" placeholder="Email..."  />
+        <button type="submit" >Filter</button>
+    </form>
+
+    <a th:href="@{/users/new}">Create New User</a>
     <table border="1">
         <tr>
             <th>ID</th><th>Name</th><th>Date of Birth</th><th>Contact</th><th>Email</th><th>Actions</th>
@@ -24,6 +33,6 @@
         </tr>
     </table>
     <br>
-    <a th:href="@{/users/new}">Create New User</a>
+    
 </body>
 </html>
